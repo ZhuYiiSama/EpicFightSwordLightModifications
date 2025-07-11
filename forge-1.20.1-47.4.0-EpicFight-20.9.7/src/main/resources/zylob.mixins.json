@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "com.Zhu_Yii.zylob.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "zylob.refmap.json",
+  "priority": 1,
+  "mixins": [
+    "TrailParticleMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

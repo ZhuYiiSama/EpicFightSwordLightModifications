@@ -1,0 +1,38 @@
+# 必须的 mod 加载器配置
+modLoader = "javafml"
+loaderVersion = "[47,)"  # 直接写死版本范围避免变量问题
+
+# 基础元数据
+license = "MIT"          # 直接指定许可证（避免变量替换问题）
+# issueTrackerURL = "https://example.com/issues"
+
+[[mods]]
+modId = "zylob"          # 直接写 modid（避免变量问题）
+version = "0.1.0"       # 固定版本号以便调试
+displayName = "Zylob Mod"
+authors = "Zhu_Yii"
+
+# 多行描述必须使用三双引号（不能用单引号）
+description = """
+Zhu_Yii 的原创模组，带来全新游戏体验!
+"""
+
+# 依赖配置
+[[dependencies.zylob]]
+modId = "forge"
+versionRange = "[47.4.0,)"  # 指定精确的 Forge 版本范围
+mandatory = true
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.zylob]]
+modId = "minecraft"
+versionRange = "[1.20.1]"    # 指定精确的 MC 版本
+mandatory = true
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.zylob]]
+modId = "epicfight"
+versionRange = "(,20.9.7]"
+mandatory = true
