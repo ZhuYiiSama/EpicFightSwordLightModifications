@@ -33,7 +33,6 @@ public abstract class TrailParticleMixin{
     @Mutable
     @Final
     @Shadow
-
     protected final TrailInfo trailInfo;
 
     // 修改粒子渲染类型为发光类型
@@ -48,15 +47,15 @@ public abstract class TrailParticleMixin{
         public void begin(com.mojang.blaze3d.vertex.BufferBuilder builder, net.minecraft.client.renderer.texture.TextureManager textureManager) {
             // 使用统一的渲染设置（非光影状态下的设置）
             RenderSystem.depthMask(false);
+            RenderSystem.disableCull();
             RenderSystem.enableBlend();
             RenderSystem.blendFunc(
                     GlStateManager.SourceFactor.SRC_COLOR,
                     GlStateManager.DestFactor.SRC_ALPHA
             );
-            RenderSystem.disableCull();
 
             // 绑定粒子纹理 - 使用原版粒子纹理
-            textureManager.bindForSetup(new ResourceLocation("textures/particle/swing_trail.png"));
+//            textureManager.bindForSetup(ResourceLocation.parse("textures/particle/swing_trail.png"));
 
             // 开始渲染缓冲区
             builder.begin(com.mojang.blaze3d.vertex.VertexFormat.Mode.QUADS,

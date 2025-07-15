@@ -64,7 +64,7 @@ public abstract class TrailParticleMixin {
             RenderSystem.disableCull();
 
             // 绑定粒子纹理 - 使用原版粒子纹理
-            textureManager.bindForSetup(new ResourceLocation("textures/particle/swing_trail.png"));
+//            textureManager.bindForSetup(ResourceLocation.parse("textures/particle/swing_trail.png"));
 
             // 开始渲染缓冲区
             builder.begin(com.mojang.blaze3d.vertex.VertexFormat.Mode.QUADS,

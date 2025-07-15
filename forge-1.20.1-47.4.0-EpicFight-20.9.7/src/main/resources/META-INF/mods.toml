@@ -9,12 +9,12 @@ license = "MIT"          # 直接指定许可证（避免变量替换问题）
 [[mods]]
 modId = "zylob"          # 直接写 modid（避免变量问题）
 version = "0.1.0"       # 固定版本号以便调试
-displayName = "Zylob Mod"
+displayName = "EpicFight Sword Light Modifications"
 authors = "Zhu_Yii"
 
 # 多行描述必须使用三双引号（不能用单引号）
 description = """
-Zhu_Yii 的原创模组，带来全新游戏体验!
+修改了原版史诗战斗刀光，\n使其能够发光
 """
 
 # 依赖配置
