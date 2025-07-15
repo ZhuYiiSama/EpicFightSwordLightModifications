@@ -8,7 +8,7 @@ license = "MIT"          # 直接指定许可证（避免变量替换问题）
 
 [[mods]]
 modId = "zylob"          # 直接写 modid（避免变量问题）
-version = "0.1.0"       # 固定版本号以便调试
+version = "0.1.1"       # 固定版本号以便调试
 displayName = "EpicFight Sword Light Modifications"
 authors = "Zhu_Yii"
 
